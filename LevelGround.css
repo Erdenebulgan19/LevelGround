@@ -22,19 +22,66 @@
   /*******************************************/
   
   body {
+    background-color: black;
+    width: 800px;
+    margin: 0 auto;
   
   }
   
-  
+
   /******************************************
   /* LAYOUT
   /*******************************************/
-  header {
+  header{
+    background-color: gray;
   
   }
-  
+  nav *{
+    float: left;
+    width: 25%;
+    color: white;
+    display: block; 
+}
+ header + section {
+    background-color: gray;
+    padding: 0 25px;
+    text-align: center;
+}
+ header + section + section{
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+article {
+    background-color: lightcyan;
+    color: black; 
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding-top: 10px auto;
+}
+article section{
+    background-color: lightgray;
+    width: 200px;
+    height: 100px;
+    margin: 20px auto;
+    
+}
+body > header + section + section + section + section{
+    background-color: white;
+    text-align: center;
+    padding-bottom: 5px;
+}
   footer {
+    background-color: gray;
+    text-align: center;
+    padding-top: 5px;
   
+  }
+  footer > section ul{
+    list-style: none;
   }
   
   /******************************************
